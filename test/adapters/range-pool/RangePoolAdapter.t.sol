@@ -119,7 +119,7 @@ contract RangePoolAdapterTest is Test {
   }
 
   /// @dev Sweep feasible amounts (skip any the oracle rejects, e.g. below the
-  /// MINIMUM_TRADE_AMOUNT gate); require at least `minHits` wei-parity matches.
+  /// MINIMUM_TRADE_AMOUNT gate); require at least 2 wei-parity matches.
   function _sweep(
     address pool,
     address oIn,
